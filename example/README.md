@@ -34,3 +34,7 @@ Call Pancakeswap
 ```JS
 bscApi.get(cakeKey, cakePoolPid, account)
 ```
+
+## Implementation
+
+Example [Vue.js and Ethers.js](https://github.com/Mc01/bsc-api/blob/master/example/src/components/HelloWorld.vue)
