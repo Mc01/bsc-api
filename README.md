@@ -22,7 +22,7 @@ API first argument is key for accessing proxies:
 Autofarm CAKE Vault pid is 7 (full list available on Autofarm Vault contract)
 Pancakeswap CAKE Pool pid is 0 (full list available on Pancakeswap Pool contract)
 
-## Example usage:
+## Example usage
 
 Check balance of CAKE token:
 ```
@@ -50,3 +50,7 @@ cakePoolPid = 0
 address = 0x...
 BscApi.get("cake", cakePoolPid, address)
 ```
+
+## Example implementation
+
+Check example with [Ethers.js](https://github.com/Mc01/bsc-api/tree/master/example)
