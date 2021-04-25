@@ -1,6 +1,6 @@
 # BSC API
 
-Binance Smart Chain On-Chain API ([Example](https://mc01.github.io/bsc-api/))
+Binance Smart Chain On-Chain API ([Live example](https://mc01.github.io/bsc-api/))
 
 ## Contracts
 
