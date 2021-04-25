@@ -53,4 +53,4 @@ BscApi.get("cake", cakePoolPid, address)
 
 ## Example implementation
 
-Check example with [Ethers.js](https://github.com/Mc01/bsc-api/tree/master/example#bsc-api)
+With [Ethers.js](https://github.com/Mc01/bsc-api/tree/master/example#bsc-api)
