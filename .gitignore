@@ -1,4 +1,6 @@
+.DS_Store
 .idea
+secrets.json
 node_modules
 
 #Hardhat files

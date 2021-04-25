@@ -7,5 +7,11 @@ compile:
 runtest:
 	npx hardhat test
 
-deploy:
-	npx hardhat run scripts/deploy.js
+deploy-auto:
+	npx hardhat run scripts/deploy-auto.js
+
+deploy-cake:
+	npx hardhat run scripts/deploy-cake.js
+
+deploy-api:
+	npx hardhat run scripts/deploy-api.js
