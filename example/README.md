@@ -1,6 +1,7 @@
 # BSC API
 
-[Live example](https://mc01.github.io/bsc-api/)
+- [Live example](https://mc01.github.io/bsc-api/)
+- [Code sample](https://github.com/Mc01/bsc-api/blob/master/example/src/components/HelloWorld.vue)
 
 ## Ethers.js
 
@@ -34,7 +35,3 @@ Call Pancakeswap
 ```JS
 bscApi.get(cakeKey, cakePoolPid, account)
 ```
-
-## Implementation
-
-Example [Vue.js and Ethers.js](https://github.com/Mc01/bsc-api/blob/master/example/src/components/HelloWorld.vue)
