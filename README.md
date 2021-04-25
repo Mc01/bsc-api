@@ -51,6 +51,10 @@ address = 0x...
 BscApi.get("cake", cakePoolPid, address)
 ```
 
+## Read contract
+
+Test it on [Etherscan](https://bscscan.com/address/0xf5cb93f18ed8bf23b00b78f2d0693aa60ca27538#readContract)
+
 ## Example implementation
 
 With [Ethers.js](https://github.com/Mc01/bsc-api/tree/master/example#bsc-api)
