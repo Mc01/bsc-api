@@ -1,6 +1,6 @@
 # BSC API
 
-[TL;DR](https://mc01.github.io/bsc-api/)
+[Live example](https://mc01.github.io/bsc-api/)
 
 ## Ethers.js
 
