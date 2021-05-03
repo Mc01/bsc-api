@@ -23,9 +23,11 @@ API first argument is key for accessing proxies:
 - Pancakeswap Proxy under `cake` key
 - Pancakeswap Proxy V2 under `cake2` key
 
-Autofarm CAKE Vault pid is 7 (full list available on Autofarm Vault contract)
-Pancakeswap CAKE Pool pid is 0 (full list available on Pancakeswap Pool contract)
-Pancekeswap V2 does not use pids for Pool (first argument can be omitted)
+> Autofarm CAKE Vault pid is 7 (full list available on Autofarm Vault contract)
+
+> Pancakeswap CAKE Pool pid is 0 (full list available on Pancakeswap Pool contract)
+
+> Pancekeswap V2 does not use pids for Pool (first argument can be omitted)
 
 ## Example usage
 
