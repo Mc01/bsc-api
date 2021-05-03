@@ -13,5 +13,8 @@ deploy-auto:
 deploy-cake:
 	npx hardhat run scripts/deploy-cake.js
 
+deploy-cakev2:
+	npx hardhat run scripts/deploy-cakev2.js
+
 deploy-api:
 	npx hardhat run scripts/deploy-api.js
