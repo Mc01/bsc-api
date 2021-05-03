@@ -2,7 +2,7 @@
 pragma solidity ^0.7.0;
 
 import "./CakeInterface.sol";
-import "./PoolInterface.sol";
+import "./PoolV2Interface.sol";
 import "../ProxyInterface.sol";
 import "../utils/SafeMath.sol";
 
