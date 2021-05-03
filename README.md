@@ -13,14 +13,19 @@ Autofarm Proxy:
 Pancakeswap Proxy:
 - [0x4c07abea65923e7e1084595be38e0755c9b42251](https://bscscan.com/address/0x4c07abea65923e7e1084595be38e0755c9b42251)
 
+Pancakeswap Proxy V2:
+- [0x41C653634477BdBa8D6113e6dC0E1D82e1364770](https://bscscan.com/address/0x41C653634477BdBa8D6113e6dC0E1D82e1364770)
+
 ## Configuration
 
 API first argument is key for accessing proxies:
 - Autofarm Proxy under `auto` key
 - Pancakeswap Proxy under `cake` key
+- Pancakeswap Proxy V2 under `cake2` key
 
 Autofarm CAKE Vault pid is 7 (full list available on Autofarm Vault contract)
 Pancakeswap CAKE Pool pid is 0 (full list available on Pancakeswap Pool contract)
+Pancekeswap V2 does not use pids for Pool (first argument can be omitted)
 
 ## Example usage
 
@@ -49,6 +54,13 @@ Get balance, staked and pending for CAKE:
 cakePoolPid = 0
 address = 0x...
 BscApi.get("cake", cakePoolPid, address)
+```
+
+Get balance, staked and pending for CAKE V2:
+```
+pid = 0 (is not used)
+address = 0x...
+BscApi.get("cake2", pid, address)
 ```
 
 ## Read contract
