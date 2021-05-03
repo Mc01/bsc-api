@@ -10,7 +10,7 @@ contract CakeV2Proxy is ProxyInterface {
     using SafeMath for uint256;
 
     CakeInterface _cake = CakeInterface(0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82);
-    PoolInterface _pool = PoolV2Interface(0xa80240eb5d7e05d3f250cf000eec0891d00b51cc);
+    PoolV2Interface _pool = PoolV2Interface(0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC);
 
     function getBalance(address account) external override view returns (uint256) {
         return _cake.balanceOf(account);
@@ -22,8 +22,8 @@ contract CakeV2Proxy is ProxyInterface {
     }
 
     function getPending(uint256 _, address account) external override view returns (uint256) {
-        (uint256 shares, , uint256 staked, ) = _pool.userInfo(account);
-        uint256 pricePerShare = _pool.getPricePerFullShare(poolId, account);
-        return ((share.mul(pricePerShare)).div(10 ** 18)).sub(staked);
+        (uint256 share, , uint256 staked, ) = _pool.userInfo(account);
+        uint256 pricePerShare = _pool.getPricePerFullShare();
+        return share.mul(pricePerShare).div(10 ** 18).sub(staked);
     }
 }
