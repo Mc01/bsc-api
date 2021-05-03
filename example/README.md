@@ -1,6 +1,7 @@
 # BSC API
 
-TL;DR
+- [Live example](https://mc01.github.io/bsc-api/)
+- [Code sample](https://github.com/Mc01/bsc-api/blob/master/example/src/components/HelloWorld.vue)
 
 ## Ethers.js
 

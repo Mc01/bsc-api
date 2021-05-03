@@ -1,6 +1,6 @@
 # BSC API
 
-Binance Smart Chain On-Chain API
+Binance Smart Chain On-Chain API ([Live example](https://mc01.github.io/bsc-api/))
 
 ## Contracts
 
@@ -22,7 +22,7 @@ API first argument is key for accessing proxies:
 Autofarm CAKE Vault pid is 7 (full list available on Autofarm Vault contract)
 Pancakeswap CAKE Pool pid is 0 (full list available on Pancakeswap Pool contract)
 
-## Example usage:
+## Example usage
 
 Check balance of CAKE token:
 ```
@@ -50,3 +50,11 @@ cakePoolPid = 0
 address = 0x...
 BscApi.get("cake", cakePoolPid, address)
 ```
+
+## Read contract
+
+Test it on [Etherscan](https://bscscan.com/address/0xf5cb93f18ed8bf23b00b78f2d0693aa60ca27538#readContract)
+
+## Example implementation
+
+With [Ethers.js](https://github.com/Mc01/bsc-api/tree/master/example#bsc-api)
