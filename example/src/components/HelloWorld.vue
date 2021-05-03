@@ -27,10 +27,10 @@ const bscAbi = ['function get(string, uint, address) view returns (uint, uint, u
 const bscApi = new ethers.Contract(bscApiAddress, bscAbi, provider)
 
 const autoKey = 'auto'
-const cakeKey = 'cake'
+const cakeV2Key = 'cake2'
 
 const autoVaultPid = 7
-const cakePoolPid = 0
+const cakeFakePid = 0
 
 const state = reactive({
   auto: {},
@@ -45,7 +45,7 @@ bscApi.get(autoKey, autoVaultPid, account).then(
   }
 )
 
-bscApi.get(cakeKey, cakePoolPid, account).then(
+bscApi.get(cakeV2Key, cakeFakePid, account).then(
   (result) => {
     state.cake.balance = ethers.utils.formatEther(result[0])
     state.cake.staked = ethers.utils.formatEther(result[1])

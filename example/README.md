@@ -20,10 +20,10 @@ Arguments
 const account = '0xF7DE62B65768a169279be74b12FaA65a22FB38D3'
 
 const autoKey = 'auto'
-const cakeKey = 'cake'
+const cakeV2Key = 'cake2'
 
 const autoVaultPid = 7
-const cakePoolPid = 0
+const cakeFakePid = 0
 ```
 
 Call Autofarm
@@ -31,7 +31,7 @@ Call Autofarm
 bscApi.get(autoKey, autoVaultPid, account)
 ```
 
-Call Pancakeswap
+Call Pancakeswap V2
 ```JS
-bscApi.get(cakeKey, cakePoolPid, account)
+bscApi.get(cakeV2Key, cakeFakePid, account)
 ```
