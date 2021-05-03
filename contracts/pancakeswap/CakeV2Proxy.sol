@@ -16,12 +16,12 @@ contract CakeV2Proxy is ProxyInterface {
         return _cake.balanceOf(account);
     }
 
-    function getStaked(uint256 _, address account) external override view returns (uint256) {
+    function getStaked(uint256, address account) external override view returns (uint256) {
         ( , , uint256 staked, ) = _pool.userInfo(account);
         return staked;
     }
 
-    function getPending(uint256 _, address account) external override view returns (uint256) {
+    function getPending(uint256, address account) external override view returns (uint256) {
         (uint256 share, , uint256 staked, ) = _pool.userInfo(account);
         uint256 pricePerShare = _pool.getPricePerFullShare();
         return share.mul(pricePerShare).div(10 ** 18).sub(staked);
